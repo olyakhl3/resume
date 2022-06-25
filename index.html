@@ -7,76 +7,102 @@
     <meta name="keywords" content="resume, Olya, learning">
     <meta name="description" content="This is my first HTML, Css project and this is my resume">
     <title>Olya resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <img src="https://pro-dachnikov.com/uploads/posts/2021-11/1637924142_17-pro-dachnikov-com-p-podsolnechnik-foto-19.jpg" alt="sunflower" width="200">
-    <h1>Оля Цветкова</h1>
-    <p>Я <strong>работаю </strong>в онкологическом диспансерe <em>делопроизводителем</em> в Нижнем Новгороде</p>
-    <p>Я люблю путешествовать, <strong><em>ходить пешком</em></strong>  и учу <em>английский</em></p>
+    <div class="container">
+
+        <div class="info">
+          <img src="https://sun9-64.userapi.com/impf/BGXh_HxOrB0QTGg5qMkyqapiUu3kVzDi6OBRMg/-J3ih15vytU.jpg?size=607x1080&quality=96&sign=af51b7e6f0362f3a28b97cf86e37838e&type=album" alt="myphotos" class="photo">
     
-    <h3>Список социальных сетей:</h3>    
-    <a href="#" target="_blank">Instagram |</a>
-    <a href="#" target="_blank">VK |</a>
-    <a href="#" target="_blank">Telegram</a>
-
-    <h3>Мои хобби:</h3>
-    <ul>
-        <li>Чтение</li>
-        <li>Ходьба</li>
-            <ol>
-                <li>Быстрая</li>
-                <li>Медленная</li>
-            </ol>
-        <li>Английский</li>
-    </ul>
-
-    <h3>Опыт работы:</h3>
-    <table>
-        <thead>
-            <tr>
+          <div class="info-text">
+            <h1>Ольга Хлыстова</h1>
+    
+            <p>Я работаю делопроизводителем <strong>в поликлинике</strong> и очень хочу стать <strong>разработчиком</strong></p>
+    
+            <p>Я люблю <em>путешествовать, гулять и учиться чему-то новому</em></p>
+    
+            <h4>Список социальных сетей:</h4>
+    
+            <a href="https://vk.com/id64697674" target="_blank">Vkontakte</a>
+            |
+            <a href="https://t.me/olyahlystova" target="_blank">Telegram</a>
+            
+          </div>
+        </div>
+    
+        <div class="card bg-green">
+          <h2>Мои хобби</h2>
+    
+          <ol class="list">
+            <li>Путешествия</li>
+            <li>Ходьба</li>
+            <li>Чтение</li>
+          </ol>
+        </div>
+    
+        <div class="card bg-red">
+          <h2>Опыт работы</h2>
+    
+          <table class="table">
+            <thead>
+              <tr>
                 <th>Название</th>
                 <th>Должность</th>
                 <th>Год</th>
-            </tr>   
-        </thead>
-        <tbody>
-            <tr>
-                <td>Поликлиника</td>
-                <td>Делопроизводитель</td>
-                <td>2019 - н.в.</td>
-            </tr>
-            <tr>
-                <td>Министерство экологии</td>
-                <td>Канцелярист</td>
-                <td>2017-2019</td>
-            </tr>
-            <tr>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
                 <td>Гостиница</td>
                 <td>Администратор</td>
                 <td>2015-2017</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>Связатьс со мной</h3>
-    <form>
-        <div>
-            <label for="text">Ваше имя:</label>
-            <input type="text" id="text" placeholder="Введите имя">
+              </tr>
+              <tr>
+                <td>Министерство экологии</td>
+                <td>Делопроизводитель</td>
+                <td>2017-2019</td>
+              </tr>
+              <tr>
+                <td>Поликлиника</td>
+                <td>Делопроизводитель</td>
+                <td>2019-н.в.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-        <div>
+ 
+        <form action="/" class="form">
+          <h2>Связаться со мной</h2>
+    
+          <div class="form-row">
+    
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите имя">
+            </div>
+    
+            <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input type="email" id="email" placeholder="Введите email">
+            </div>
+          </div>
+    
+          <div class="form-group">
             <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение"></textarea>
-        </div>
-        <div>
-            <button type="submit">Отправить</button>
-        </div>
-    </form>
+            <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+          </div>
+    
+          <input class="btn" type="submit" value="Отправить!">
+        </form>
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    
 </body>
 </html>
